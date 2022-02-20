@@ -1,0 +1,155 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgb(167, 131, 203); */
+    background-image: linear-gradient(to bottom, rgb(167, 131, 203), rgb(187, 140, 215)); 
+    color: rgb(246, 246, 247);
+    font-family: 'Oswald', sans-serif ;
+    font-weight: bold;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    margin-top: -5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    /* line-height: 30px; */
+}
+
+li{
+    display:inline-block ;
+    margin: 20px;
+    font-size: 20px;
+}
+
+a{
+    color: rgb(246, 246, 247);
+}
+
+a:hover{
+    color: rgb(118, 61, 177);
+    transition: 300ms all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(118, 61, 177);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#inscreva-se-btn:hover{
+    color: rgb(246, 246, 247);
+    background-color: rgb(118, 61, 177);
+}
+
+h1{
+    font-weight: 600;
+    width: 50%;
+    height: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: -60px;
+}
+
+h2{
+    font-size: 70px;
+    /* line-height: 40px; */
+    font-weight: 600;
+}
+
+span{
+    color: rgb(118, 61, 177);
+}
+
+.news{
+    margin-top: -80px;
+}
+
+p{
+    /* line-height: 25px; */
+    max-width: 500px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+img{
+    width: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: -20px;
+}
+
+form [type="button"]{
+    height: 50px;
+    width: 50%;
+    background-color:rgb(118, 61, 177) ;
+    color: rgb(246, 246, 247);
+    font-weight: bold;
+}
+
+form [type="button"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 760px){ 
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+
+    h2{
+        font-size: 38px;
+        margin-top: 75px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        margin-top: 20px;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
